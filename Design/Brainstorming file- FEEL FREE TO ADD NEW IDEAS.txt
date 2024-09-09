@@ -1,0 +1,10 @@
+++++++++ LIGHT & SHADOW IDEA +++++++++
+
+-parallax 2D
+-puzzle/ platformer
+-single player/ required co-op??
+-narrative?
+-goal?
+-light source?
+-setting?
+-tension? sense of danger?
