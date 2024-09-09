@@ -8,3 +8,7 @@
 -light source?
 -setting?
 -tension? sense of danger?
+
+== Bonfire (cozy resting space)==
+
+-player should have opportunities to leave the controller and the game world should continue "living" without putting the player in danger.
