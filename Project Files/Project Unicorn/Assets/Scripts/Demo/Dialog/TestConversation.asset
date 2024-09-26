@@ -26,3 +26,42 @@ MonoBehaviour:
     CharacterName: All Knowing Void
     CharacterMessage: It's a place where nothing is certain. Rules can change at
       any moment, and the very nature of reality is unpredictable.
+  - CharacterImage: {fileID: 21300000, guid: 6e7f5ab9ef33cf840b8b397291818f68, type: 3}
+    CharacterName: Blue Ball
+    CharacterMessage: Sounds scary.
+  - CharacterImage: {fileID: 21300000, guid: 59e7f983ba0e91640b72509171a0b541, type: 3}
+    CharacterName: All Knowing Void
+    CharacterMessage: It can be. But it can also be exciting. It's a place where
+      anything is possible.
+  - CharacterImage: {fileID: 21300000, guid: 59e7f983ba0e91640b72509171a0b541, type: 3}
+    CharacterName: All Knowing Void
+    CharacterMessage: In Protypius, beings of immense power create and destroy entities
+      at will, shaping the reality around us. These beings are beyond our comprehension,
+      capable of bending the laws of physics to their whim.
+  - CharacterImage: {fileID: 21300000, guid: 6e7f5ab9ef33cf840b8b397291818f68, type: 3}
+    CharacterName: Blue Ball
+    CharacterMessage: But... what about our fate?
+  - CharacterImage: {fileID: 21300000, guid: 59e7f983ba0e91640b72509171a0b541, type: 3}
+    CharacterName: All Knowing Void
+    CharacterMessage: That's the thing. Our fate is unknown. We could be trapped
+      here forever, or we could be returned to our original dimension. Or, we could
+      become part of this reality entirely.
+  - CharacterImage: {fileID: 21300000, guid: 6e7f5ab9ef33cf840b8b397291818f68, type: 3}
+    CharacterName: Blue Ball
+    CharacterMessage: That's... terrifying.
+  - CharacterImage: {fileID: 21300000, guid: 59e7f983ba0e91640b72509171a0b541, type: 3}
+    CharacterName: All Knowing Void
+    CharacterMessage: It is. But it's also exciting. We're living in a world of infinite
+      possibilities.
+  - CharacterImage: {fileID: 21300000, guid: 6e7f5ab9ef33cf840b8b397291818f68, type: 3}
+    CharacterName: Blue Ball
+    CharacterMessage: But... what if these beings decide to destroy us?
+  - CharacterImage: {fileID: 21300000, guid: 59e7f983ba0e91640b72509171a0b541, type: 3}
+    CharacterName: All Knowing Void
+    CharacterMessage: That's a possibility. We're at their mercy.
+  - CharacterImage: {fileID: 21300000, guid: 6e7f5ab9ef33cf840b8b397291818f68, type: 3}
+    CharacterName: Blue Ball
+    CharacterMessage: Please, tell them not to destroy us. We just want to go home.
+  - CharacterImage: {fileID: 21300000, guid: 59e7f983ba0e91640b72509171a0b541, type: 3}
+    CharacterName: All Knowing Void
+    CharacterMessage: (Sighs) I'll try. But I can't promise anything.

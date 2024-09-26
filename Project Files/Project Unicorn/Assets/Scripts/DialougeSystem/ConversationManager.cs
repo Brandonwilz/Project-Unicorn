@@ -31,25 +31,11 @@ namespace ProjectUnicorn.DialogSystem
         public void Interact()
         {
             ShowUI();
-            UpdateUI(_conversation.Dialog[_conversationCount].CharacterImage, 
-                     _conversation.Dialog[_conversationCount].CharacterName, 
-                     _conversation.Dialog[_conversationCount].CharacterMessage);
-        }
-
-        private void ShowUI()
-        {
-            _conversationUI.SetActive(true);
-        }
-
-        private void UpdateUI(Sprite characterSprite, string characterName, string characterMessage)
-        {
-            _conversationImage.sprite = characterSprite;
-            _conversationSpeaker.text = characterName;
-            _conversationSpeechText.text = characterMessage;
 
             // Increment the counter by one to progress the conversation
-            if (_conversationCount <= _conversation.Dialog.Length)
+            if (_conversationCount < _conversation.Dialog.Length - 1)
             {
+                UpdateUI();
                 _conversationCount++;
             }
             else
@@ -57,6 +43,18 @@ namespace ProjectUnicorn.DialogSystem
                 _conversationCount = 0;
                 ResetUI();
             }
+        }
+
+        private void ShowUI()
+        {
+            _conversationUI.SetActive(true);
+        }
+
+        private void UpdateUI()
+        {
+            _conversationImage.sprite = _conversation.Dialog[_conversationCount].CharacterImage;
+            _conversationSpeaker.text = _conversation.Dialog[_conversationCount].CharacterName;
+            _conversationSpeechText.text = _conversation.Dialog[_conversationCount].CharacterMessage;
         }
 
         private void ResetUI()
