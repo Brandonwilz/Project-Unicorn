@@ -9,7 +9,8 @@ public class LayerOtherBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Layers.layerOther = this.gameObject;
+        Layers.layerAlternate = this.gameObject;
+        this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame

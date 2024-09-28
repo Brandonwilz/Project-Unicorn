@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 using static Layers;
+using static Progress;
 
 public class LayerMainBehaviour : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class LayerMainBehaviour : MonoBehaviour
     void Start()
     {
         Layers.layerCurrent = this.gameObject;
+        Progress.setFlag(State.layerMainActive, true);
     }
 
     // Update is called once per frame

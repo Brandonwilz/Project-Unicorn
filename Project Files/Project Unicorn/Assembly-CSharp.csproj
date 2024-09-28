@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Progress.cs" />
     <Compile Include="Assets\Scripts\Layers.cs" />
     <Compile Include="Assets\Scripts\LayersBehaviour.cs" />
+    <Compile Include="Assets\Scripts\LayerMaskBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
