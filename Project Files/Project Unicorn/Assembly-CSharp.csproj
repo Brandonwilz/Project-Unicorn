@@ -57,8 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DialougeSystem\Conversation.cs" />
+    <Compile Include="Assets\Scripts\SceneManagement\SceneSwitcher.cs" />
     <Compile Include="Assets\Demo\InteractableChest.cs" />
     <Compile Include="Assets\Scripts\DialougeSystem\ConversationManager.cs" />
+    <Compile Include="Assets\Scripts\SceneManagement\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteractor.cs" />
     <Compile Include="Assets\Demo\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\InteractionSystem\IInteractable.cs" />

@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/tegomlee-scene_transition_1.unity
+    guid: 8c49a3cdbc09aab458ac7309df65e675
+  - enabled: 1
+    path: Assets/Scenes/tegomlee-scene_transition_2.unity
+    guid: 59cee2524da54c145b5cbe93e24fdd5a
+  - enabled: 1
+    path: Assets/Scenes/tegomlee-scene_transition_3.unity
+    guid: 23bd288146be37441bf566699149449c
   m_configObjects: {}

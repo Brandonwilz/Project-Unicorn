@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|s:\\repos\\project-unicorn\\project files\\project unicorn\\assets\\scripts\\scenemanagement\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenemanagement\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\scenemanagement\\sceneswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenemanagement\\sceneswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\player\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\dialougesystem\\conversationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialougesystem\\conversationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|s:\\repos\\project-unicorn\\project files\\project unicorn\\assets\\scripts\\dialougesystem\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\dialougesystem\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialougesystem\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\interactionsystem\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactionsystem\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\player\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +34,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "SceneLoader.cs",
+              "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\SceneManagement\\SceneLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneManagement\\SceneLoader.cs",
+              "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\SceneManagement\\SceneLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneManagement\\SceneLoader.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA2wCsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T00:56:53.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SceneSwitcher.cs",
+              "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\SceneManagement\\SceneSwitcher.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneManagement\\SceneSwitcher.cs",
+              "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\SceneManagement\\SceneSwitcher.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneManagement\\SceneSwitcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T00:14:58.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PlayerInteractor.cs",
               "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Player\\PlayerInteractor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInteractor.cs",
@@ -42,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "IInteractable.cs",
               "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\InteractionSystem\\IInteractable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InteractionSystem\\IInteractable.cs",
@@ -54,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ConversationManager.cs",
               "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
@@ -62,12 +99,11 @@
               "RelativeToolTip": "Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAzwCYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T17:31:36.58Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-22T17:31:36.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Conversation.cs",
               "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\Conversation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DialougeSystem\\Conversation.cs",
@@ -75,8 +111,7 @@
               "RelativeToolTip": "Assets\\Scripts\\DialougeSystem\\Conversation.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAABSwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T18:55:48.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-21T18:55:48.912Z"
             }
           ]
         }
