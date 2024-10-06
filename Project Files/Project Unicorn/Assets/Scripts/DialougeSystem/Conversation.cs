@@ -19,6 +19,7 @@ namespace ProjectUnicorn.DialogSystem
         {
             public Sprite CharacterImage;
             public string CharacterName;
+            [TextArea (3, 5)]
             public string CharacterMessage;
         }
 
