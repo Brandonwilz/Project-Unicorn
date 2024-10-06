@@ -31,6 +31,8 @@ namespace ProjectUnicorn.SceneManagement
         [SerializeField] private Animator _animator;
         [SerializeField] private AnimationProperties[] _animationProperties = new AnimationProperties[8];
 
+        public static event Action<Vector2> OnPlayerPositionChange;
+
         private void Awake()
         {
             // Search for other objects of the same type in the heirarchy and Destroy itself it one is already present.
@@ -52,28 +54,29 @@ namespace ProjectUnicorn.SceneManagement
             SceneSwitcher.OnSceneLoaded -= LoadNewScene;
         }
 
-        private void LoadNewScene(string newSceneName, AnimationType fromType, AnimationType toType)
+        private void LoadNewScene(string newSceneName, AnimationType fromType, AnimationType toType, Vector2 newPosition)
         {
-            StartCoroutine(TransitionToScene(newSceneName, fromType, toType));
+            StartCoroutine(TransitionToScene(newSceneName, fromType, toType, newPosition));
         }
 
-        private IEnumerator TransitionToScene(string sceneName, AnimationType fromType, AnimationType toType)
+        private IEnumerator TransitionToScene(string sceneName, AnimationType fromType, AnimationType toType, Vector2 newPosition)
         {
             string fromTrigger = GetAnimatorTriggerFrom(fromType);
             _animator.SetTrigger(fromTrigger);
 
-            Debug.Log(fromTrigger);
-            Debug.Log(_animator.GetCurrentAnimatorStateInfo(0).IsName(fromTrigger));
-
             yield return new WaitForSeconds(GetAnimationStateLength(fromTrigger));
 
-            SceneManager.LoadSceneAsync(sceneName);
+            AsyncOperation loadAsync = SceneManager.LoadSceneAsync(sceneName);
+
+            while (!loadAsync.isDone)
+            {
+                yield return null;
+            }
+
+            OnPlayerPositionChange?.Invoke(newPosition);
 
             string toTrigger = GetAnimatorTriggerFrom(toType);
             _animator.SetTrigger(toTrigger);
-
-            Debug.Log(toTrigger);
-            Debug.Log(_animator.GetCurrentAnimatorStateInfo(0).IsName(toTrigger));
         }
 
         private string GetAnimatorTriggerFrom(AnimationType animationType)

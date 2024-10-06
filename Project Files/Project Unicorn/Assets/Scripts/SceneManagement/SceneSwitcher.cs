@@ -12,18 +12,20 @@ namespace ProjectUnicorn.SceneManagement
         [SerializeField] private string _sceneToLoadName;
         [SerializeField] private SceneLoader.AnimationType[] _animationType = new SceneLoader.AnimationType[2];
 
-        public static event Action<string, SceneLoader.AnimationType, SceneLoader.AnimationType> OnSceneLoaded;
+        [SerializeField] private Vector2 _playerPositionInNewScene;
+
+        public static event Action<string, SceneLoader.AnimationType, SceneLoader.AnimationType, Vector2> OnSceneLoaded;
 
         public void Interact()
         {
-            OnSceneLoaded?.Invoke(_sceneToLoadName, _animationType[0], _animationType[1]);
+            OnSceneLoaded?.Invoke(_sceneToLoadName, _animationType[0], _animationType[1], _playerPositionInNewScene);
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.CompareTag("Player"))
             {
-                OnSceneLoaded?.Invoke(_sceneToLoadName, _animationType[0], _animationType[1]);
+                OnSceneLoaded?.Invoke(_sceneToLoadName, _animationType[0], _animationType[1], _playerPositionInNewScene);
             }
         }
     }
