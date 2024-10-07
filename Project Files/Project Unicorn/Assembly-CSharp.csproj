@@ -57,11 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\LayerOtherBehaviour.cs" />
+    <Compile Include="Assets\Scripts\LayerMaskBehaviour.cs" />
     <Compile Include="Assets\Scripts\LayerMainBehaviour.cs" />
     <Compile Include="Assets\Scripts\Progress.cs" />
     <Compile Include="Assets\Scripts\Layers.cs" />
     <Compile Include="Assets\Scripts\LayersBehaviour.cs" />
-    <Compile Include="Assets\Scripts\LayerMaskBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MovementBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
