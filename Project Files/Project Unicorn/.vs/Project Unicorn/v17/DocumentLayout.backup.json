@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\dialougesystem\\conversationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|s:\\repos\\project-unicorn\\project files\\project unicorn\\assets\\scripts\\dialougesystem\\conversationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialougesystem\\conversationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|s:\\repos\\project-unicorn\\project files\\project unicorn\\assets\\scripts\\dialougesystem\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\dialougesystem\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialougesystem\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -26,8 +26,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -60,7 +64,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
               "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAzwCYAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwCYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T17:31:36.58Z",
               "EditorCaption": ""
@@ -73,7 +77,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\DialougeSystem\\Conversation.cs",
               "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\Conversation.cs",
               "RelativeToolTip": "Assets\\Scripts\\DialougeSystem\\Conversation.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAABSwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T18:55:48.912Z",
               "EditorCaption": ""

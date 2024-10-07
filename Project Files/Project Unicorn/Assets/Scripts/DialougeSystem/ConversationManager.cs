@@ -31,12 +31,14 @@ namespace ProjectUnicorn.DialogSystem
         public void Interact()
         {
             ShowUI();
+            Debug.Log("Activated");
 
             // Increment the counter by one to progress the conversation
-            if (_conversationCount < _conversation.Dialog.Length - 1)
+            if (_conversationCount < _conversation.Dialog.Length)
             {
                 UpdateUI();
                 _conversationCount++;
+                Debug.Log("displayed");
             }
             else
             {

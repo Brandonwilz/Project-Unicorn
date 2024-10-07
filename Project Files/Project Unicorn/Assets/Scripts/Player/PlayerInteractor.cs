@@ -30,6 +30,8 @@ namespace ProjectUnicorn.Player
             // Detect any interactables, if more than one choose the one closest to the player
             var currentInteractable = GetInteractable();
 
+            Debug.Log(currentInteractable.gameObject.name);
+
             // Stop the interaction if no available object is found
             if (currentInteractable == null) return;
 
