@@ -2,20 +2,99 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static Layers;
+
+using static Progress;
 
 namespace MaskLayer
 {
-    public class LayerMaskBehaviour : MonoBehaviour
-    {
+    public class LayerMaskBehaviour : MonoBehaviour {
+
+        [SerializeField] private GameObject layerCurrent;
+        [SerializeField] private GameObject layerAlternate;
+
+        private Vector3 positionMaskOn;
+        private Vector3 positionMaskOff;
+
         // Start is called before the first frame update
         void Start() {
-            Layers.maskLayerBehaviour = this;
+            positionMaskOff = transform.position;
+
+            if (layerCurrent != null) {
+                positionMaskOn = layerCurrent.transform.position;
+            }
+            else {
+                positionMaskOn = transform.position;
+                positionMaskOn.y -= transform.position.y;
+            }
+
+            Progress.setFlag(State.layerMainActive, true);
+            Progress.setFlag(State.layerOtherActive, false);
+
+            setMaskInteractions();
         }
 
         // Update is called once per frame
         void Update() {
+            if (Input.GetKeyDown(KeyCode.S)) {
+                StartCoroutine(switchLayers());
+            }
+        }
 
+        public void setMaskInteractions() {
+            SpriteRenderer[] sprites;
+
+            if (layerCurrent != null) {
+                sprites = layerCurrent.GetComponentsInChildren<SpriteRenderer>();
+                for (int i = 0; i < sprites.Length; i++) {
+                    sprites[i].maskInteraction = SpriteMaskInteraction.VisibleOutsideMask;
+                }
+            }
+
+            if (layerAlternate != null) {
+                sprites = layerAlternate.GetComponentsInChildren<SpriteRenderer>();
+                for (int i = 0; i < sprites.Length; i++) {
+                    sprites[i].maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
+                }
+            }
+
+            gameObject.GetComponentInChildren<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.None;
+        }
+
+        public IEnumerator switchLayers() {
+
+            GameObject layerHold;
+
+            if (layerCurrent != null && layerAlternate != null && !Progress.getFlag(State.layerSwitchingActive)) {
+                layerAlternate.SetActive(true);
+
+                toggleMaskOverTime(1f);
+
+                // update flags
+                if (Progress.getFlag(State.layerMainActive)) {
+                    Progress.setFlag(State.layerMainActive, false);
+                    Progress.setFlag(State.layerOtherActive, true);
+                }
+                else if (Progress.getFlag(Progress.State.layerOtherActive)) {
+                    Progress.setFlag(State.layerOtherActive, false);
+                    Progress.setFlag(State.layerMainActive, true);
+                }
+
+                yield return new WaitUntil(isSwitchComplete);
+
+                // toggle which layer is active
+                layerCurrent.SetActive(false);
+
+                // swap references to main and alternate layers
+                layerHold = layerCurrent;
+                layerCurrent = layerAlternate;
+                layerAlternate = layerHold;
+            }
+
+
+        }
+
+        public bool isSwitchComplete() {
+            return !Progress.getFlag(State.layerSwitchingActive);
         }
 
         // adapted from Lakeffect at the URL "https://discussions.unity.com/t/way-to-move-object-over-time/86379/3"
@@ -24,11 +103,11 @@ namespace MaskLayer
             if (!Progress.getFlag(Progress.State.layerSwitchingActive)) {
                 if (Progress.getFlag(Progress.State.layerMainActive)) {
                     Progress.setFlag(Progress.State.layerSwitchingActive, true);
-                    StartCoroutine(MoveOverSeconds(this.gameObject, POSITION_MASK_ON, time));
+                    StartCoroutine(MoveOverSeconds(this.gameObject, positionMaskOn, time));
                 }
                 else if (Progress.getFlag(Progress.State.layerOtherActive)) {
                     Progress.setFlag(Progress.State.layerSwitchingActive, true);
-                    StartCoroutine(MoveOverSeconds(this.gameObject, POSITION_MASK_OFF, time));
+                    StartCoroutine(MoveOverSeconds(this.gameObject, positionMaskOff, time));
                 }
             }
         }

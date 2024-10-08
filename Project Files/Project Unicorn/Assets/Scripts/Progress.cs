@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-public class Progress : MonoBehaviour
-{
+public class Progress : MonoBehaviour {
     public enum State {
         layerMainActive,
         layerOtherActive,
@@ -27,10 +26,4 @@ public class Progress : MonoBehaviour
     public static void setFlag(State state, bool flag) {
         flags[((int)state)] = flag;
     }
-//    public static void setFlagsOpposite(State stateChanged, State stateOpposite, bool flag) {
-//            if (Progress.getFlag(Progress.State.layerMainActive)) {
-//                Progress.setFlag(Progress.State.layerMainActive, false);
-//                Progress.setFlag(Progress.State.layerOtherActive, true);
-//        flags[((int)state)] = flag;
-//    }
 }

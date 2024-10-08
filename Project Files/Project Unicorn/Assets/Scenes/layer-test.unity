@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 57657036}
-  - component: {fileID: 57657037}
   m_Layer: 0
   m_Name: LayerOther
   m_TagString: Untagged
@@ -157,18 +156,6 @@ Transform:
   m_Father: {fileID: 1965644553}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &57657037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57657035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f7a76438c9e99a408f165796cec9109, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &95535178
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,6 +338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d513ee49c76c64fbf20b5d7a990b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerCurrent: {fileID: 755254676}
+  layerAlternate: {fileID: 57657035}
 --- !u!1 &503373687
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,14 +380,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 755254677}
-  - component: {fileID: 755254678}
   m_Layer: 0
   m_Name: LayerMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &755254677
 Transform:
   m_ObjectHideFlags: 0
@@ -416,18 +404,6 @@ Transform:
   m_Father: {fileID: 1965644553}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &755254678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755254676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e3d0aa2fcddb648af946dffd1f4cf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &767202570
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +484,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &791333154
 GameObject:
@@ -621,7 +597,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 2
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1009974808
 GameObject:
@@ -707,7 +683,7 @@ GameObject:
   - component: {fileID: 1191501998}
   - component: {fileID: 1191501999}
   m_Layer: 0
-  m_Name: SpriteMask
+  m_Name: SpriteMaskTransition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -858,7 +834,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1233471955
 GameObject:
@@ -885,7 +861,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233471955}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 1994830398}
@@ -940,7 +916,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 2
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1337350902
 GameObject:
@@ -1085,7 +1061,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 2
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1799428766
 GameObject:
@@ -1214,9 +1190,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1965644552}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e690ec4d666c51642b363fe35094d95a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c861decac4a11b4e80cb7811add706f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask: {fileID: 401809713}
+  layerMain: {fileID: 755254676}
+  layerOther: {fileID: 57657035}
+  layerShared: {fileID: 1456854246}
 --- !u!1 &1994830397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,5 +1308,5 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 1
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0

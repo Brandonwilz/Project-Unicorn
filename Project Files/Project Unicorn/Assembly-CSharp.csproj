@@ -56,13 +56,10 @@
     <Analyzer Include="E:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\LayerOtherBehaviour.cs" />
     <Compile Include="Assets\Scripts\LayerMaskBehaviour.cs" />
-    <Compile Include="Assets\Scripts\LayerMainBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Progress.cs" />
-    <Compile Include="Assets\Scripts\Layers.cs" />
-    <Compile Include="Assets\Scripts\LayersBehaviour.cs" />
     <Compile Include="Assets\Scripts\MovementBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Progress.cs" />
+    <Compile Include="Assets\Scripts\LayersBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
