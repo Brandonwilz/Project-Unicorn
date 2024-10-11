@@ -18,19 +18,37 @@ namespace ProjectUnicorn.Player
     {
         [SerializeField] private float _radius = 1f;
         [SerializeField] private LayerMask _interactableLayer;
+        [SerializeField] private GameObject _interactionUI;
+
+        private bool _isInteractiveUIActive = false;
+
+        private void Start()
+        {
+            _interactionUI.SetActive(false);
+        }
 
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Space))
                 ActivateInteractable();
+
+            if (!_isInteractiveUIActive && GetInteractable() != null )
+            {
+                _isInteractiveUIActive = true;
+                _interactionUI.SetActive(true);
+            }
+            
+            if (_isInteractiveUIActive && GetInteractable() == null )
+            {
+                _isInteractiveUIActive = false;
+                _interactionUI.SetActive(false);
+            }
         }
 
         private void ActivateInteractable()
         {
             // Detect any interactables, if more than one choose the one closest to the player
             var currentInteractable = GetInteractable();
-
-            Debug.Log(currentInteractable.gameObject.name);
 
             // Stop the interaction if no available object is found
             if (currentInteractable == null) return;

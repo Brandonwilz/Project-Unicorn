@@ -57,25 +57,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteSkin.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteSkinEntity.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteLib\SpriteLibraryAsset.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteSkinUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\PrepareSkinningSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\TransformAccessJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\NativeArrayHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteLib\SpriteLibraryUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\Components.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteSkinBatch.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\UpdateBoundsJob.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteLib\SpriteLibrary.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteSkinUpdateHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\BufferManager.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\NativeCustomSlice.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteSkinComposite.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\DeformSpriteSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteSkinUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\Components.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteLib\SpriteLibrary.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\NativeCustomSlice.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteLib\SpriteResolver.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\UpdateBoundsSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteSkinEntity.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteLib\SpriteLibraryAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\PrepareSkinningSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\BufferManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\SpriteSkinComposite.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Runtime\Unity.2D.Animation.Runtime.asmdef" />
@@ -321,14 +321,14 @@
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>

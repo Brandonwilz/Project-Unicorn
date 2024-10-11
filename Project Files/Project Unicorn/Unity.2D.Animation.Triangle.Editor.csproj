@@ -57,90 +57,90 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Mesh.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\TriangleFormat.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\RegionPointer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\IConstraintMesher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\DCEL\Face.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\IntersectionHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Algorithm\Incremental.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\ConstraintMesher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Rectangle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\DCEL\HalfEdge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\ITriangulator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Properties\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\IMesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Iterators\RegionIterator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\ConstraintOptions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\ExtensionMethods.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Polygon.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\DefaultVoronoiFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\TriangleQuadTree.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\AdjacencyMatrix.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Algorithm\Dwyer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\Otri.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Enums.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Vertex.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\Legacy\IVoronoi.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Contour.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\DebugWriter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\DCEL\Vertex.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Logging\ILog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\RobustPredicates.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Smoothing\SimpleSmoother.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Configuration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\GenericMesher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\IVoronoiFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Logging\LogItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\ITriangle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\IFileFormat.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\QualityOptions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\IMeshFormat.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Algorithm\SweepLine.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Log.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\NewLocation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\DCEL\Vertex.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\StandardVoronoi.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Logging\ILog.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\CuthillMcKee.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Data\BadSubseg.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\RobustPredicates.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\Legacy\BoundedVoronoiLegacy.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\RegionPointer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\IConstraintMesher.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\MeshValidator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Smoothing\SimpleSmoother.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\InputTriangle.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Configuration.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\BoundedVoronoi.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\GenericMesher.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Iterators\EdgeIterator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\DCEL\Face.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\IntersectionHelper.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\QualityMesher.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\DCEL\DcelMesh.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\Statistic.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Algorithm\Incremental.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\ISegment.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\TriangleSampler.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\SubSegment.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Smoothing\VoronoiFactory.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Behavior.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\FileProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\IPolygon.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Converter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\ConstraintMesher.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\TriangleReader.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Rectangle.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Edge.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\IEdge.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Logging\ILogItem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\DCEL\HalfEdge.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\ITriangulator.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\Triangle.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Data\BadTriangle.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\Osub.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\Interpolation.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Data\BadTriQueue.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\IVoronoiFactory.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Logging\LogItem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Properties\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\TriangleLocator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\IMesh.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\TriangleWriter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Iterators\RegionIterator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\ITriangle.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\VoronoiBase.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\ConstraintOptions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\ExtensionMethods.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\TrianglePool.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\VertexSorter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\PolygonValidator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Polygon.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\DefaultVoronoiFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\IPolygonFormat.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\TriangleQuadTree.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Smoothing\ISmoother.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Segment.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\IFileFormat.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IPredicates.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\IQualityMesher.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\Legacy\SimpleVoronoi.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\QualityMeasure.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\AdjacencyMatrix.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\QualityOptions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Algorithm\Dwyer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\Otri.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Point.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\IMeshFormat.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Enums.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Algorithm\SweepLine.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Vertex.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\Legacy\VoronoiRegion.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\TriangleFormat.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\DCEL\DcelMesh.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\Statistic.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Smoothing\VoronoiFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Behavior.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\FileProcessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Converter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\IO\TriangleReader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Edge.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Logging\ILogItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Meshing\Data\BadTriangle.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Topology\Osub.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Voronoi\VoronoiBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\PolygonValidator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\VertexSorter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Smoothing\ISmoother.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Segment.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Tools\QualityMeasure.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Geometry\Point.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.2d.animation@5.2.7\Editor\Triangle\Unity.2D.Animation.Triangle.Editor.asmdef" />
@@ -386,14 +386,14 @@
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>

@@ -34,17 +34,17 @@ namespace ProjectUnicorn.Room
 
         private void Awake()
         {
-            TransitionAgent.OnRoomChanged += StartTransitionFromTo;
+            TransitionAgent.OnRoomTransitionAnimation += StartTransitionFromTo;
         }
 
         private void OnDestroy()
         {
-            TransitionAgent.OnRoomChanged -= StartTransitionFromTo;
+            TransitionAgent.OnRoomTransitionAnimation -= StartTransitionFromTo;
         }
 
         private void OnDisable()
         {
-            TransitionAgent.OnRoomChanged -= StartTransitionFromTo;
+            TransitionAgent.OnRoomTransitionAnimation -= StartTransitionFromTo;
         }
 
         private void Start()
@@ -70,7 +70,7 @@ namespace ProjectUnicorn.Room
             var centerPosition = GetPositionFromEnum(TransitionPosition.Center);
 
             _transitionBox.rectTransform.anchoredPosition = startPosition;
-            _transitionBox.rectTransform.DOAnchorPos(centerPosition, 1.0f);
+            _transitionBox.rectTransform.DOAnchorPos(centerPosition, 1.0f); // OnComplete() Research.
 
             yield return new WaitForSeconds(1);
 

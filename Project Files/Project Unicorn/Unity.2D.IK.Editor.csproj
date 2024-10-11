@@ -56,14 +56,14 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\IKGizmos.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\IKEditorManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\Inspectors\CCDSolver2DEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\Inspectors\FabrikSolver2DEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\Inspectors\IKManager2DEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\Inspectors\LimbSolver2DEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\IKGizmos.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\Inspectors\Solver2DEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\Inspectors\FabrikSolver2DEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.2d.animation@5.2.7\IK\Editor\Unity.2D.IK.Editor.asmdef" />
@@ -309,14 +309,14 @@
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
+    </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
