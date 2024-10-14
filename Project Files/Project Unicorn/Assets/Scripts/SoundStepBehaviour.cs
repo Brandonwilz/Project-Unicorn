@@ -10,31 +10,25 @@ public class SoundStepBehaviour : MonoBehaviour {
         hardwood,
     }
 
-    static string[] FOOTSTEPS_CARPET_FILENAMES = {
-        "Billy Carpet Slide 1",
-        "Billy Carpet Step Single 2",
-        "Billy Carpet Step Single 3",
-        "Billy Carpet Step single 4",
-    };
-
-    static string[] FOOTSTEPS_HARDWOOD_FILENAMES = {
-        "Billy Hardwood Step 1 single",
-        "Billy Hardwood Step 2 single",
-        "Billy Hardwood Step 3 single",
-        "Billy Hardwood Step 4 single",
-    };
-
-    static List<AudioClip> soundsFootstepsCarpet = new List<AudioClip>();
+    static List<AudioClip> soundsFootstepsCarpet;
 
     AudioSource audioSource;
 
     [SerializeField] private MaterialSound materialSoundDefault = MaterialSound.hardwood;
+    [SerializeField] private GameObject SFX_Carpet;
+    [SerializeField] private GameObject SFX_Hardwood;
 
     private MaterialSound materialSound;
+
+    private AudioClip[] soundsCarpet;
+    private AudioClip[] soundsHardwood;
 
     void Start() {
         audioSource = GetComponent<AudioSource>();
         materialSound = materialSoundDefault;
+
+        soundsCarpet = getSoundsFromObject(SFX_Carpet);
+        soundsHardwood = getSoundsFromObject(SFX_Hardwood);
     }
 
     void Update() {
@@ -50,18 +44,29 @@ public class SoundStepBehaviour : MonoBehaviour {
     void playSoundStep() {
         switch (materialSound) {
             case MaterialSound.carpet:
-                audioSource.PlayOneShot(randomAudioClip(FOOTSTEPS_CARPET_FILENAMES));
+                audioSource.PlayOneShot(randomAudioClip(soundsCarpet));
                 break;
             case MaterialSound.hardwood:
-                audioSource.PlayOneShot(randomAudioClip(FOOTSTEPS_HARDWOOD_FILENAMES));
+                audioSource.PlayOneShot(randomAudioClip(soundsHardwood));
                 break;
         }
     }
 
-    AudioClip randomAudioClip(string[] names) {
-        return Resources.Load<AudioClip>(names[randomIndex(names)]);
+    AudioClip randomAudioClip(AudioClip[] sounds) {
+        return sounds[randomIndex(sounds)];
     }
-    int randomIndex(string[] names) {
-        return (int)(names.Length * Random.value);
+    int randomIndex(AudioClip[] sounds) {
+        return (int)(sounds.Length * Random.value);
+    }
+
+    AudioClip[] getSoundsFromObject(GameObject obj) {
+        AudioSource[] audioSources = obj.GetComponentsInChildren<AudioSource>(true);
+        AudioClip[] sounds = new AudioClip[audioSources.Length];
+
+        for(int i=0; i<audioSources.Length; i++) {
+            sounds[i] = audioSources[i].clip;
+        }
+
+        return sounds;
     }
 }

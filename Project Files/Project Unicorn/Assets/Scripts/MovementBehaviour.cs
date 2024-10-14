@@ -22,7 +22,7 @@ public class MovementBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         body = GetComponent<Rigidbody2D>();
-        animator = GetComponentInChildren<Animator>();
+        animator = GetComponentInChildren<Animator>(true);
         animator.speed = speedAnimation;
     }
 

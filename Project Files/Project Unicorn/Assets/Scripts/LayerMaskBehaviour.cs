@@ -44,20 +44,20 @@ namespace MaskLayer
             SpriteRenderer[] sprites;
 
             if (layerCurrent != null) {
-                sprites = layerCurrent.GetComponentsInChildren<SpriteRenderer>();
+                sprites = layerCurrent.GetComponentsInChildren<SpriteRenderer>(true);
                 for (int i = 0; i < sprites.Length; i++) {
                     sprites[i].maskInteraction = SpriteMaskInteraction.VisibleOutsideMask;
                 }
             }
 
             if (layerAlternate != null) {
-                sprites = layerAlternate.GetComponentsInChildren<SpriteRenderer>();
+                sprites = layerAlternate.GetComponentsInChildren<SpriteRenderer>(true);
                 for (int i = 0; i < sprites.Length; i++) {
                     sprites[i].maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
                 }
             }
 
-            gameObject.GetComponentInChildren<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.None;
+            gameObject.GetComponentInChildren<SpriteRenderer>(true).maskInteraction = SpriteMaskInteraction.None;
         }
 
         public IEnumerator switchLayers() {
