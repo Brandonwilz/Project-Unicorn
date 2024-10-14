@@ -76,6 +76,7 @@ namespace ProjectUnicorn.Room
 
             // Invoke any room changing events
 
+
             _transitionBox.rectTransform.DOAnchorPos(endPosition, 1.0f);
 
             yield return new WaitForSeconds(1);
