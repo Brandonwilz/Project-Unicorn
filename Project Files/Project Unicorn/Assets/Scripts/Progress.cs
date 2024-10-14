@@ -8,7 +8,8 @@ public class Progress : MonoBehaviour {
     public enum State {
         layerMainActive,
         layerOtherActive,
-        layerSwitchingActive
+        layerSwitchingActive,
+        playerMovingActive,
     }
 
     static bool[] flags;

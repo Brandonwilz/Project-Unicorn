@@ -60,6 +60,8 @@
     <Compile Include="Assets\Scripts\MovementBehaviour.cs" />
     <Compile Include="Assets\Scripts\Progress.cs" />
     <Compile Include="Assets\Scripts\LayersBehaviour.cs" />
+    <Compile Include="Assets\Scripts\SoundStepBehaviour.cs" />
+    <Compile Include="Assets\Scripts\SetSoundStepBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
