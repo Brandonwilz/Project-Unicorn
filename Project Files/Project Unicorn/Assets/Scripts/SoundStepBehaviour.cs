@@ -23,6 +23,8 @@ public class SoundStepBehaviour : MonoBehaviour {
     private AudioClip[] soundsCarpet;
     private AudioClip[] soundsHardwood;
 
+    private int soundCount;
+
     void Start() {
         audioSource = GetComponent<AudioSource>();
         materialSound = materialSoundDefault;
@@ -34,9 +36,15 @@ public class SoundStepBehaviour : MonoBehaviour {
     void Update() {
     }
 
-    void setMaterialSound(MaterialSound material) {
+    void addMaterialSound(MaterialSound material) {
+        soundCount++;
         materialSound = material;
-        if (materialSound == MaterialSound.none) {
+    }
+
+    void removeMaterialSound() {
+        soundCount--;
+        if(soundCount <= 0) {
+            soundCount = 0;
             materialSound = materialSoundDefault;
         }
     }

@@ -9,12 +9,12 @@ public class SetSoundStepBehaviour : MonoBehaviour {
 
     public void OnTriggerEnter2D(Collider2D collision) {
         if(collision.gameObject.tag == "Player") {
-            collision.gameObject.SendMessage("setMaterialSound", materialSound);
+            collision.gameObject.SendMessage("addMaterialSound", materialSound);
         }
     }
     public void OnTriggerExit2D(Collider2D collision) {
         if(collision.gameObject.tag == "Player") {
-            collision.gameObject.SendMessage("setMaterialSound", MaterialSound.none);
+            collision.gameObject.SendMessage("removeMaterialSound");
         }
     }
 }
