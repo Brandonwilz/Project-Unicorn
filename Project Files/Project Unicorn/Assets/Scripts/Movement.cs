@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MovementBehaviour : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     private Rigidbody2D body;
     private Animator animator;
@@ -64,9 +64,9 @@ public class MovementBehaviour : MonoBehaviour
         else {
             stop();
             animator.Play("Billy idle");
-        }
 
-        Progress.setFlag(Progress.State.playerMovingActive, false);
+            Progress.setFlag(Progress.State.playerMovingActive, false);
+        }
     }
 
     void setVelocity(float velocity) {

@@ -7,7 +7,7 @@ using static Progress;
 
 namespace MaskLayer
 {
-    public class LayerMaskBehaviour : MonoBehaviour {
+    public class LayerMask : MonoBehaviour {
 
         [SerializeField] private GameObject layerCurrent;
         [SerializeField] private GameObject layerAlternate;

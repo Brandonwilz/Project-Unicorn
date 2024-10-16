@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundStepBehaviour : MonoBehaviour {
+public class SoundStep : MonoBehaviour {
 
     public enum MaterialSound {
         none,

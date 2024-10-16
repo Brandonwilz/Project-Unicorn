@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LayersBehaviour : MonoBehaviour {
+public class Layers : MonoBehaviour {
 
     [SerializeField] private GameObject layerMask;
     [SerializeField] private GameObject layerMain;

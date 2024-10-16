@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static SoundStepBehaviour;
+using static SoundStep;
 
-public class SetSoundStepBehaviour : MonoBehaviour {
+public class SetSoundStep : MonoBehaviour {
 
     [SerializeField] MaterialSound materialSound;
 

@@ -545,36 +545,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &251101599
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 251101600}
-  m_Layer: 0
-  m_Name: PositionMaskOff
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &251101600
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251101599}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -50, y: 0, z: -50}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1298453995}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &267553439
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,7 +1314,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 607531310}
+  - component: {fileID: 607531312}
   - component: {fileID: 607531311}
   m_Layer: 0
   m_Name: MaskTransition
@@ -1353,20 +1323,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &607531310
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607531309}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -50}
-  m_LocalScale: {x: 250, y: 250, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1298453995}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &607531311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1406,7 +1362,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -1418,6 +1374,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!224 &607531312
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607531309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -50}
+  m_LocalScale: {x: 300, y: 300, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1298453996}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0.16, y: 0.16}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &752240354
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,9 +2213,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3794bd024b7014e97f1b4020061ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomDestination: {fileID: 1836809428}
-  positionDestination: {fileID: 2099036761}
   roomController: {fileID: 1298453994}
+  roomDestination: {fileID: 1836809428}
+  positionDestinationObject: {fileID: 2099036761}
+  directionTransitionIn: 0
+  directionTransitionOut: 1
+  directionPlayer: 1
 --- !u!1 &1174750068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,9 +2264,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3794bd024b7014e97f1b4020061ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomDestination: {fileID: 1339897480}
-  positionDestination: {fileID: 1836494712}
   roomController: {fileID: 1298453994}
+  roomDestination: {fileID: 1339897480}
+  positionDestinationObject: {fileID: 1836494712}
+  directionTransitionIn: 0
+  directionTransitionOut: 1
+  directionPlayer: 1
 --- !u!61 &1174750071
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2616,7 +2597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6866d46a75f5443bd777ca96238a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _radius: 5
+  _radius: 3
   _interactableLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -2711,7 +2692,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1298453995}
+  - component: {fileID: 1298453996}
   - component: {fileID: 1298453994}
   m_Layer: 0
   m_Name: RoomController
@@ -2732,14 +2713,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93079f77ac0d0bc47ae6eff7042c0a31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1188999079}
   roomCurrent: {fileID: 1339897480}
   mask: {fileID: 607531309}
-  positionMaskOn: {fileID: 2087534747}
-  positionMaskOff: {fileID: 251101599}
+  positionMaskOnObject: {fileID: 2087534747}
   timeTransitionIn: 0.5
+  timeTransitionActive: 0.25
   timeTransitionOut: 0.5
---- !u!4 &1298453995
-Transform:
+  distance: 50
+--- !u!224 &1298453996
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2749,12 +2732,16 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 607531310}
+  - {fileID: 607531312}
   - {fileID: 2087534749}
-  - {fileID: 251101600}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1339897480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,9 +3540,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3794bd024b7014e97f1b4020061ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomDestination: {fileID: 1339897480}
-  positionDestination: {fileID: 1018433407}
   roomController: {fileID: 1298453994}
+  roomDestination: {fileID: 1339897480}
+  positionDestinationObject: {fileID: 1018433407}
+  directionTransitionIn: 1
+  directionTransitionOut: 0
+  directionPlayer: 0
 --- !u!61 &1643610213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3678,9 +3668,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3794bd024b7014e97f1b4020061ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomDestination: {fileID: 1429587250}
-  positionDestination: {fileID: 1102865929}
   roomController: {fileID: 1298453994}
+  roomDestination: {fileID: 1429587250}
+  positionDestinationObject: {fileID: 1102865929}
+  directionTransitionIn: 1
+  directionTransitionOut: 0
+  directionPlayer: 0
 --- !u!61 &1656832476
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4607,10 +4600,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087534747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -50}
+  m_LocalPosition: {x: 0, y: 3.5, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1298453995}
+  m_Father: {fileID: 1298453996}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2099036761
