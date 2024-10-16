@@ -14,7 +14,9 @@ public class InteractableSwitchRoom : MonoBehaviour, Interactable {
     [SerializeField] Movement.Direction directionPlayer = Movement.Direction.right;
 
     public void Interact() {
-        roomController.switchRoom(roomDestination, positionDestinationObject, directionTransitionIn, directionTransitionOut);
-        roomController.setPlayerDirection(directionPlayer);
+        if (roomController != null) {
+            roomController.switchRoom(roomDestination, positionDestinationObject, directionTransitionIn, directionTransitionOut);
+            roomController.setPlayerDirection(directionPlayer);
+        }
     }
 }

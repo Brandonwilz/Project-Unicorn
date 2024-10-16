@@ -12,17 +12,51 @@ using UnityEngine;
  * Date: 2024-09-20
  */
 
+// modified by maalmo234
+
 namespace ProjectUnicorn.Player
 {
     public class PlayerInteractor : MonoBehaviour
     {
         [SerializeField] private float _radius = 1f;
+
+        // added
+        //----------------------------------------------------------------------
         [SerializeField] private LayerMask _interactableLayer;
+        [SerializeField] private LabelInteract _label;
+
+        private GameObject _currentInteractableObject = null;
+        private Collider2D _interactableCollider = null;
+
+        private void Start() {
+            if(_label != null) {
+                _label.setActive(false);
+            }
+        }
+        //----------------------------------------------------------------------
 
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Space))
                 ActivateInteractable();
+
+            // added
+            //----------------------------------------------------------------------
+            if (_label != null) {
+                _interactableCollider = GetInteractable();
+                if (_interactableCollider != null) {
+                    if (_interactableCollider.gameObject != _currentInteractableObject) {
+                        _label.setPosition(_interactableCollider.gameObject.transform.position);
+                        _label.setActive(true);
+                        _currentInteractableObject = _interactableCollider.gameObject;
+                    }
+                }
+                else {
+                    _label.setActive(false);
+                    _currentInteractableObject = null;
+                }
+            }
+            //----------------------------------------------------------------------
         }
 
         private void ActivateInteractable()
