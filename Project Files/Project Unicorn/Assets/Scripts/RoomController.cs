@@ -27,7 +27,6 @@ public class RoomController : MonoBehaviour {
     private Vector3 positionMaskOff;
 
     private bool isSwitchingActive = false;
-    private bool isTransitionActive = false;
 
     void Start() {
         if (roomCurrent != null) {
@@ -41,7 +40,6 @@ public class RoomController : MonoBehaviour {
     public void switchRoom(GameObject roomDestination, GameObject positionDestinationObject, Direction directionIn, Direction directionOut) {
         if (!isSwitchingActive) {
             isSwitchingActive = true;
-            Progress.setFlag(Progress.State.playerInputPaused, true);
             StartCoroutine(transition(roomDestination, positionDestinationObject.transform.position, directionIn, directionOut));
         }
     }
@@ -53,16 +51,19 @@ public class RoomController : MonoBehaviour {
     }
 
     private IEnumerator transition(GameObject roomDestination, Vector3 positionDestination, Direction directionIn, Direction directionOut) {
+        Progress.setFlag(Progress.State.playerInputPaused, true);
+
+        Functions.Bool isTransitionComplete = new Functions.Bool();
 
         // transition in mask
         if (positionMaskOnObject != null) {
-            isTransitionActive = true;
-            mask.SetActive(true);
             setPositionMaskOff(positionMaskOnObject.transform.position, directionIn);
-            StartCoroutine(moveMask(positionMaskOff, positionMaskOnObject.transform.position, timeTransitionIn));
+            mask.transform.position = positionMaskOff;
+            mask.SetActive(true);
+            StartCoroutine(Functions.MoveOverSeconds(mask, positionMaskOnObject.transform.position, timeTransitionIn, isTransitionComplete));
 
             // wait
-            yield return new WaitWhile(() => isTransitionActive);
+            yield return new WaitUntil(() => isTransitionComplete.value);
         }
 
         // unload
@@ -82,30 +83,13 @@ public class RoomController : MonoBehaviour {
 
         // transition out mask
         if (positionMaskOnObject != null) {
-            isTransitionActive = true;
             setPositionMaskOff(positionMaskOnObject.transform.position, directionOut);
-            StartCoroutine(moveMask(positionMaskOnObject.transform.position, positionMaskOff, timeTransitionOut));
-
-            // wait
-            yield return new WaitWhile(() => isTransitionActive);
-            mask.SetActive(false);
+            StartCoroutine(Functions.MoveOverSeconds(mask, positionMaskOff, timeTransitionOut, isTransitionComplete));
+            yield return new WaitUntil(() => isTransitionComplete.value);
         }
 
         Progress.setFlag(Progress.State.playerInputPaused, false);
         isSwitchingActive = false;
-    }
-
-    private IEnumerator moveMask(Vector3 positionStart, Vector3 positionEnd, float seconds) {
-        if (mask != null) {
-            float elapsedTime = 0;
-            while (elapsedTime < seconds) {
-                mask.transform.position = Vector3.Lerp(positionStart, positionEnd, (elapsedTime / seconds));
-                elapsedTime += Time.deltaTime;
-                yield return new WaitForEndOfFrame();
-            }
-            mask.transform.position = positionEnd;
-        }
-        isTransitionActive = false;
     }
 
     private void setPositionMaskOff(Vector3 positionMaskOn, Direction direction) {

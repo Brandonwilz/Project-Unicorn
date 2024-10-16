@@ -67,7 +67,7 @@ namespace MaskLayer
             if (layerCurrent != null && layerAlternate != null && !Progress.getFlag(State.layerSwitchingActive)) {
                 layerAlternate.SetActive(true);
 
-                toggleMaskOverTime(1f);
+                StartCoroutine(toggleMaskOverTime(1f));
 
                 // update flags
                 if (Progress.getFlag(State.layerMainActive)) {
@@ -79,7 +79,7 @@ namespace MaskLayer
                     Progress.setFlag(State.layerMainActive, true);
                 }
 
-                yield return new WaitUntil(isSwitchComplete);
+                yield return new WaitWhile(() => Progress.getFlag(State.layerSwitchingActive));
 
                 // toggle which layer is active
                 layerCurrent.SetActive(false);
@@ -93,44 +93,22 @@ namespace MaskLayer
 
         }
 
-        public bool isSwitchComplete() {
-            return !Progress.getFlag(State.layerSwitchingActive);
-        }
-
-        // adapted from Lakeffect at the URL "https://discussions.unity.com/t/way-to-move-object-over-time/86379/3"
-        // --
-        public void toggleMaskOverTime(float time) {
+        public IEnumerator toggleMaskOverTime(float time) {
+            Functions.Bool isComplete = new Functions.Bool();
             if (!Progress.getFlag(Progress.State.layerSwitchingActive)) {
                 if (Progress.getFlag(Progress.State.layerMainActive)) {
                     Progress.setFlag(Progress.State.layerSwitchingActive, true);
-                    StartCoroutine(MoveOverSeconds(this.gameObject, positionMaskOn, time));
+                    StartCoroutine(Functions.MoveOverSeconds(this.gameObject, positionMaskOn, time, isComplete));
+                    yield return new WaitUntil(() => isComplete.value);
+                    Progress.setFlag(Progress.State.layerSwitchingActive, false);
                 }
                 else if (Progress.getFlag(Progress.State.layerOtherActive)) {
                     Progress.setFlag(Progress.State.layerSwitchingActive, true);
-                    StartCoroutine(MoveOverSeconds(this.gameObject, positionMaskOff, time));
+                    StartCoroutine(Functions.MoveOverSeconds(this.gameObject, positionMaskOff, time, isComplete));
+                    yield return new WaitUntil(() => isComplete.value);
+                    Progress.setFlag(Progress.State.layerSwitchingActive, false);
                 }
             }
         }
-
-        public IEnumerator MoveOverSpeed(GameObject objectToMove, Vector3 positionEnd, float speed) {
-            // speed should be 1 unit per second
-            while (objectToMove.transform.position != positionEnd) {
-                objectToMove.transform.position = Vector3.MoveTowards(objectToMove.transform.position, positionEnd, speed * Time.deltaTime);
-                yield return new WaitForEndOfFrame();
-            }
-        }
-
-        public IEnumerator MoveOverSeconds(GameObject objectToMove, Vector3 end, float seconds) {
-            float elapsedTime = 0;
-            Vector3 startingPos = objectToMove.transform.position;
-            while (elapsedTime < seconds) {
-                objectToMove.transform.position = Vector3.Lerp(startingPos, end, (elapsedTime / seconds));
-                elapsedTime += Time.deltaTime;
-                yield return new WaitForEndOfFrame();
-            }
-            objectToMove.transform.position = end;
-            Progress.setFlag(Progress.State.layerSwitchingActive, false);
-        }
-        // --
     }
 }

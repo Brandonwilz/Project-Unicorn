@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Progress.cs" />
     <Compile Include="Assets\Scripts\Layers.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteractor.cs" />
+    <Compile Include="Assets\Scripts\Functions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
