@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public static class Player {
-    static GameObject objectPlayer;
+    public static GameObject objectPlayer;
 
     public static void setPosition(GameObject obj) {
         if (objectPlayer != null) {

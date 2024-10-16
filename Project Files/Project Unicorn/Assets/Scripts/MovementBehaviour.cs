@@ -29,36 +29,44 @@ public class MovementBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update() {
 
-        if (Input.GetKey(KeyCode.RightArrow)) {
-            Progress.setFlag(Progress.State.playerMovingActive, true);
+        if (!Progress.getFlag(Progress.State.playerInputPaused)) {
+            if (Input.GetKey(KeyCode.RightArrow)) {
+                Progress.setFlag(Progress.State.playerMovingActive, true);
 
-            if (!isFootstepActive) {
-                isFootstepActive = true;
-                StartCoroutine(playFootsteps());
+                if (!isFootstepActive) {
+                    isFootstepActive = true;
+                    StartCoroutine(playFootsteps());
+                }
+
+                setVelocity(speedMove);
+                setSpriteDirection(Direction.right);
+                animator.Play("Billy Walking");
             }
+            else if (Input.GetKey(KeyCode.LeftArrow)) {
+                Progress.setFlag(Progress.State.playerMovingActive, true);
 
-            setVelocity(speedMove);
-            setSpriteDirection(Direction.right);
-            animator.Play("Billy Walking");
-        }
-        else if (Input.GetKey(KeyCode.LeftArrow)) {
-            Progress.setFlag(Progress.State.playerMovingActive, true);
+                if (!isFootstepActive) {
+                    isFootstepActive = true;
+                    StartCoroutine(playFootsteps());
+                }
 
-            if (!isFootstepActive) {
-                isFootstepActive = true;
-                StartCoroutine(playFootsteps());
+                setVelocity(-speedMove);
+                setSpriteDirection(Direction.left);
+                animator.Play("Billy Walking");
             }
+            else {
+                stop();
+                animator.Play("Billy idle");
 
-            setVelocity(-speedMove);
-            setSpriteDirection(Direction.left);
-            animator.Play("Billy Walking");
+                Progress.setFlag(Progress.State.playerMovingActive, false);
+            }
         }
         else {
             stop();
             animator.Play("Billy idle");
-
-            Progress.setFlag(Progress.State.playerMovingActive, false);
         }
+
+        Progress.setFlag(Progress.State.playerMovingActive, false);
     }
 
     void setVelocity(float velocity) {

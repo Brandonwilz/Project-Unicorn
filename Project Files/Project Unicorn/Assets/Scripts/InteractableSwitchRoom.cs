@@ -5,11 +5,12 @@ using UnityEngine;
 
 using static RoomController;
 
-public class InteractableSwitchRoom : Interactable {
+public class InteractableSwitchRoom : MonoBehaviour, Interactable {
     [SerializeField] GameObject roomDestination;
     [SerializeField] GameObject positionDestination;
+    [SerializeField] RoomController roomController;
 
     public void Interact() {
-        RoomController.switchRoom(roomDestination, positionDestination);
+        roomController.switchRoom(roomDestination, positionDestination);
     }
 }

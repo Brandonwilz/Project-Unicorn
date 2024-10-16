@@ -10,6 +10,7 @@ public class Progress : MonoBehaviour {
         layerOtherActive,
         layerSwitchingActive,
         playerMovingActive,
+        playerInputPaused,
     }
 
     static bool[] flags;
