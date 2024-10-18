@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public static class Player {
-    public static GameObject objectPlayer;
+    public static GameObject playerCurrent;
 
     public static void setPosition(GameObject obj) {
-        if (objectPlayer != null) {
-            objectPlayer.transform.position = obj.transform.position;
+        if (playerCurrent != null) {
+            playerCurrent.transform.position = obj.transform.position;
         }
     }
     public static void setPosition(Transform transform) {
-        if (objectPlayer != null) {
-            objectPlayer.transform.position = transform.position;
+        if (playerCurrent != null) {
+            playerCurrent.transform.position = transform.position;
         }
     }
     public static void setPosition(Vector3 position) {
-        if (objectPlayer != null) {
-            objectPlayer.transform.position = position;
+        if (playerCurrent != null) {
+            playerCurrent.transform.position = position;
         }
     }
 }

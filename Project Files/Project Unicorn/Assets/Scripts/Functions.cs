@@ -39,4 +39,8 @@ public static class Functions {
         isComplete.value = true;
     }
     // --
+
+    public static Vector3 multiplyVector3(Vector3 vec0, Vector3 vec1) {
+        return new Vector3(vec0.x * vec1.x, vec1.y * vec1.y, vec0.z * vec1.z);
+    }
 }
