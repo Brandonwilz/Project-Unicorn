@@ -71,10 +71,12 @@
     <Compile Include="Assets\Scripts\Initialize.cs" />
     <Compile Include="Assets\Scripts\Progress.cs" />
     <Compile Include="Assets\Scripts\Layers.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteractor.cs" />
     <Compile Include="Assets\Scripts\SetInteractableLabel.cs" />
-    <Compile Include="Assets\Scripts\Inventory.cs" />
-    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\InteractableRequireItem.cs" />
+    <Compile Include="Assets\Scripts\InteractableItemUse.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

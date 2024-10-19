@@ -16,5 +16,9 @@ namespace ProjectUnicorn.InteractionSystem
         /// This method is called when the interactable object is interacted with.
         /// </summary>
         public void Interact();
+        // added
+        //----------------------------------------------------------------------
+        public void Interact(Item.ID item);
+        //----------------------------------------------------------------------
     }
 }

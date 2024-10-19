@@ -45,6 +45,9 @@ namespace ProjectUnicorn.DialogSystem
             }
         }
 
+        public void Interact(Item.ID item) {
+        }
+
         private void ShowUI()
         {
             _conversationUI.SetActive(true);

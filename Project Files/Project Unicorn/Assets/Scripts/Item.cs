@@ -27,4 +27,11 @@ public class Item : MonoBehaviour, Interactable {
             Inventory.inventoryCurrent.addItem(id, gameObject);
         }
     }
+
+    public void Interact(Item.ID item) {
+    }
+
+    public ID getID() {
+        return id;
+    }
 }

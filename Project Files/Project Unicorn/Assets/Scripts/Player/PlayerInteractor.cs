@@ -2,6 +2,7 @@ using ProjectUnicorn.InteractionSystem;
 
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 /**
@@ -18,6 +19,9 @@ namespace ProjectUnicorn.Player
 {
     public class PlayerInteractor : MonoBehaviour
     {
+        // added
+        static public PlayerInteractor playerInteractorCurrent;
+
         [SerializeField] private float _radius = 1f;
 
         // added
@@ -25,7 +29,7 @@ namespace ProjectUnicorn.Player
         [SerializeField] private LayerMask _interactableLayer;
         [SerializeField] private LabelInteract _label;
 
-        private GameObject _currentInteractableObject = null;
+        public GameObject _currentInteractableObject = null;
         private Collider2D _interactableCollider = null;
 
         private void Start() {
@@ -49,9 +53,13 @@ namespace ProjectUnicorn.Player
                         _label.setPosition(_interactableCollider.gameObject.transform.position);
                         _label.setActive(true);
                         _currentInteractableObject = _interactableCollider.gameObject;
+                        Inventory.inventoryCurrent.setVisible(false);
                     }
                 }
                 else {
+                    if(_currentInteractableObject != null) {
+                        Inventory.inventoryCurrent.setVisible(false);
+                    }
                     _label.setActive(false);
                     _currentInteractableObject = null;
                 }

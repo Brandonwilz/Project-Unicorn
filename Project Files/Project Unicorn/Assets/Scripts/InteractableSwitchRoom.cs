@@ -19,4 +19,7 @@ public class InteractableSwitchRoom : MonoBehaviour, Interactable {
             roomController.setPlayerDirection(directionPlayer);
         }
     }
+
+    public void Interact(Item.ID item) {
+    }
 }
