@@ -2,6 +2,7 @@ using ProjectUnicorn.InteractionSystem;
 
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 /**
@@ -12,37 +13,65 @@ using UnityEngine;
  * Date: 2024-09-20
  */
 
+// modified by maalmo234
+
 namespace ProjectUnicorn.Player
 {
     public class PlayerInteractor : MonoBehaviour
     {
+        // added
+        static public PlayerInteractor playerInteractorCurrent;
+
         [SerializeField] private float _radius = 1f;
+
+        // added
+        //----------------------------------------------------------------------
         [SerializeField] private LayerMask _interactableLayer;
         [SerializeField] private GameObject _interactionUI;
+        [SerializeField] private LabelInteract _label;
 
+        public GameObject _currentInteractableObject = null;
+        private Collider2D _interactableCollider = null;
         private bool _isInteractiveUIActive = false;
 
-        private void Start()
-        {
-            _interactionUI.SetActive(false);
+        private void Start() {
+            if(_label != null) {
+                _label.setActive(false);
+            }
         }
+        //----------------------------------------------------------------------
 
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Space))
                 ActivateInteractable();
 
-            if (!_isInteractiveUIActive && GetInteractable() != null )
-            {
-                _isInteractiveUIActive = true;
-                _interactionUI.SetActive(true);
-            }
+            // added
+            //----------------------------------------------------------------------
+            if (_label != null) {
+                _interactableCollider = GetInteractable();
+                if (_interactableCollider != null) {
+                    if (_interactableCollider.gameObject != _currentInteractableObject) {
+                        _label.setPosition(_interactableCollider.gameObject.transform.position);
+                        _label.setActive(true);
+                        _currentInteractableObject = _interactableCollider.gameObject;
+                        Inventory.inventoryCurrent.setVisible(false);
+                    }
+                }
+                else {
+                    if(_currentInteractableObject != null) {
+                        Inventory.inventoryCurrent.setVisible(false);
+                    }
+                    _label.setActive(false);
+                    _currentInteractableObject = null;
+                }
             
             if (_isInteractiveUIActive && GetInteractable() == null )
             {
                 _isInteractiveUIActive = false;
                 _interactionUI.SetActive(false);
             }
+            //----------------------------------------------------------------------
         }
 
         private void ActivateInteractable()
