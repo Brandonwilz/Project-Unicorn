@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\SetSpriteLayerOffset.cs" />
     <Compile Include="Assets\Scripts\Room\TransitionAgent.cs" />
     <Compile Include="Assets\Scripts\Functions.cs" />
     <Compile Include="Assets\Scripts\RoomController.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\LabelInteract.cs" />
     <Compile Include="Assets\Scripts\DialougeSystem\ConversationManager.cs" />
+    <Compile Include="Assets\Scripts\RotateNPC.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\InteractableRequireItem.cs" />
     <Compile Include="Assets\Demo\Scripts\PlayerMotor.cs" />
@@ -82,8 +84,6 @@
     <Compile Include="Assets\Scripts\Player\PlayerInteractor.cs" />
     <Compile Include="Assets\Scripts\InteractableItemUse.cs" />
     <Compile Include="Assets\Scripts\SetInteractableLabel.cs" />
-    <Compile Include="Assets\Scripts\SetSpriteLayerOffset.cs" />
-    <Compile Include="Assets\Scripts\RotateNPC.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

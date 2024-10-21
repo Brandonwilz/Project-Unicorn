@@ -1,34 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\",
+  "WorkspaceRootPath": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\player\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|d:\\users\\dkis0\\documents\\github\\project-unicorn\\project files\\project unicorn\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|d:\\users\\dkis0\\documents\\github\\project-unicorn\\project files\\project unicorn\\assets\\scripts\\setspritelayeroffset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\setspritelayeroffset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|d:\\users\\dkis0\\documents\\github\\project-unicorn\\project files\\project unicorn\\assets\\scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\layermask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\layermask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\progress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\progress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\layers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\layers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\player\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerinteractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\interactionsystem\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactionsystem\\iinteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\interactableswitchroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactableswitchroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\room\\transitioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\room\\transitioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Room\\TransitionAgent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Room\\TransitionAgent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|s:\\repos\\project-unicorn\\project files\\project unicorn\\assets\\scripts\\room\\transitionagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\room\\transitionagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\InteractionSystem\\IInteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\InteractionSystem\\IInteractable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\demo\\scripts\\interactablechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\demo\\scripts\\interactablechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\ConversationManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\DialougeSystem\\ConversationManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\dialougesystem\\conversationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialougesystem\\conversationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Demo\\Scripts\\InteractableChest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:Assets\\Demo\\Scripts\\InteractableChest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\assets\\scripts\\dialougesystem\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialougesystem\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.18\\Editor\\VisualStudioIntegration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ide.visualstudio@2.0.18\\Editor\\VisualStudioIntegration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Demo\\Scripts\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Room\\TransitionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\Room\\TransitionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\Conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E35E75D1-07F7-BF40-B570-FC4FBA7FFA16}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\DialougeSystem\\Conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,95 +77,208 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InteractableChest.cs",
-              "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Demo\\Scripts\\InteractableChest.cs",
-              "RelativeDocumentMoniker": "Assets\\Demo\\Scripts\\InteractableChest.cs",
-              "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Demo\\Scripts\\InteractableChest.cs",
-              "RelativeToolTip": "Assets\\Demo\\Scripts\\InteractableChest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T18:02:32.554Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TransitionAgent.cs",
-              "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Room\\TransitionAgent.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Room\\TransitionAgent.cs",
-              "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Room\\TransitionAgent.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Room\\TransitionAgent.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA4wBQAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T03:15:17.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TransitionController.cs",
-              "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Room\\TransitionController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Room\\TransitionController.cs",
-              "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Room\\TransitionController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Room\\TransitionController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAywE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T02:32:36.991Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlayerInteractor.cs",
-              "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Player\\PlayerInteractor.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInteractor.cs",
-              "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Player\\PlayerInteractor.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInteractor.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwDoAAAAhAAAAAAAAAA==",
+              "Title": "Movement.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAmwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T17:35:15.514Z",
+              "WhenOpened": "2024-10-20T22:08:25.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IInteractable.cs",
-              "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\InteractionSystem\\IInteractable.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\InteractionSystem\\IInteractable.cs",
-              "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\InteractionSystem\\IInteractable.cs",
-              "RelativeToolTip": "Assets\\Scripts\\InteractionSystem\\IInteractable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Title": "SetSpriteLayerOffset.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\SetSpriteLayerOffset.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SetSpriteLayerOffset.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\SetSpriteLayerOffset.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SetSpriteLayerOffset.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T17:35:14.238Z",
+              "WhenOpened": "2024-10-20T21:58:16.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Inventory.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Inventory.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Inventory.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwEsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T21:40:58.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LayerMask.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\LayerMask.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LayerMask.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\LayerMask.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LayerMask.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIAzwCYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T21:01:47.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Progress.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Progress.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Progress.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Progress.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Progress.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T21:01:27.321Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Layers.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Layers.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Layers.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Layers.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Layers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T21:01:20.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InteractableSwitchRoom.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\InteractableSwitchRoom.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InteractableSwitchRoom.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\InteractableSwitchRoom.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InteractableSwitchRoom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T14:43:20.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Item.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Item.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Item.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Item.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T14:40:37.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VisualStudioIntegration.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.18\\Editor\\VisualStudioIntegration.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ide.visualstudio@2.0.18\\Editor\\VisualStudioIntegration.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Library\\PackageCache\\com.unity.ide.visualstudio@2.0.18\\Editor\\VisualStudioIntegration.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ide.visualstudio@2.0.18\\Editor\\VisualStudioIntegration.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwGMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T14:39:34.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "test.cs",
+              "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Demo\\Scripts\\test.cs",
+              "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Demo\\Scripts\\test.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T20:13:07.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InteractableChest.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Demo\\Scripts\\InteractableChest.cs",
+              "RelativeDocumentMoniker": "Assets\\Demo\\Scripts\\InteractableChest.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Demo\\Scripts\\InteractableChest.cs",
+              "RelativeToolTip": "Assets\\Demo\\Scripts\\InteractableChest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T18:02:32.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TransitionAgent.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Room\\TransitionAgent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Room\\TransitionAgent.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Room\\TransitionAgent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Room\\TransitionAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T03:15:17.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TransitionController.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Room\\TransitionController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Room\\TransitionController.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Room\\TransitionController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Room\\TransitionController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAywE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T02:32:36.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerInteractor.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Player\\PlayerInteractor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInteractor.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\Player\\PlayerInteractor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInteractor.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAuwGEAAACeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T17:35:15.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IInteractable.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\InteractionSystem\\IInteractable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InteractionSystem\\IInteractable.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\InteractionSystem\\IInteractable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InteractionSystem\\IInteractable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T17:35:14.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ConversationManager.cs",
-              "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
-              "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\DialougeSystem\\ConversationManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwA4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T17:31:36.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "Conversation.cs",
-              "DocumentMoniker": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\Conversation.cs",
+              "DocumentMoniker": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\Conversation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DialougeSystem\\Conversation.cs",
-              "ToolTip": "S:\\repos\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\Conversation.cs",
+              "ToolTip": "D:\\Users\\dkis0\\Documents\\GitHub\\Project-Unicorn\\Project Files\\Project Unicorn\\Assets\\Scripts\\DialougeSystem\\Conversation.cs",
               "RelativeToolTip": "Assets\\Scripts\\DialougeSystem\\Conversation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

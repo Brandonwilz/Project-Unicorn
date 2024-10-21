@@ -3,12 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour, Interactable {
+public class Item : MonoBehaviour, IInteractable {
 
     public enum ID {
         none,
         key0,
         key1,
+        cookies,
+        houseKeys,
+        plant1, 
+        plant2
     }
 
     [SerializeField] ID id;

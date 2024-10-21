@@ -25,10 +25,12 @@ public class LabelInteract : MonoBehaviour {
         if (!isWaiting) {
             if (!isDown) {
                 StartCoroutine(setToPosition(positionDown));
+                spriteRenderer.color = Color.gray;
                 isDown = true;
             }
             else {
                 StartCoroutine(setToPosition(positionStart));
+                spriteRenderer.color = Color.white;
                 isDown = false;
             }
         }

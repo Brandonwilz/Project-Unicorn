@@ -5,7 +5,7 @@ using UnityEngine;
 
 using static RoomController;
 
-public class InteractableSwitchRoom : MonoBehaviour, Interactable {
+public class InteractableSwitchRoom : MonoBehaviour, IInteractable {
     [SerializeField] RoomController roomController;
     [SerializeField] GameObject roomDestination;
     [SerializeField] GameObject positionDestinationObject;

@@ -35,7 +35,7 @@ namespace ProjectUnicorn.Player
         private bool _isInteractiveUIActive = false;
 
         private void Start() {
-            if(_label != null) {
+            if (_label != null) {
                 _label.setActive(false);
             }
         }
@@ -48,30 +48,36 @@ namespace ProjectUnicorn.Player
 
             // added
             //----------------------------------------------------------------------
-            if (_label != null) {
+            if (_label != null)
+            {
                 _interactableCollider = GetInteractable();
-                if (_interactableCollider != null) {
-                    if (_interactableCollider.gameObject != _currentInteractableObject) {
+                if (_interactableCollider != null)
+                {
+                    if (_interactableCollider.gameObject != _currentInteractableObject)
+                    {
                         _label.setPosition(_interactableCollider.gameObject.transform.position);
                         _label.setActive(true);
                         _currentInteractableObject = _interactableCollider.gameObject;
                         Inventory.inventoryCurrent.setVisible(false);
                     }
                 }
-                else {
-                    if(_currentInteractableObject != null) {
+                else
+                {
+                    if (_currentInteractableObject != null)
+                    {
                         Inventory.inventoryCurrent.setVisible(false);
                     }
                     _label.setActive(false);
                     _currentInteractableObject = null;
                 }
-            
-            if (_isInteractiveUIActive && GetInteractable() == null )
-            {
-                _isInteractiveUIActive = false;
-                _interactionUI.SetActive(false);
+
+                if (_isInteractiveUIActive && GetInteractable() == null)
+                {
+                    _isInteractiveUIActive = false;
+                    _interactionUI.SetActive(false);
+                }
+                //----------------------------------------------------------------------
             }
-            //----------------------------------------------------------------------
         }
 
         private void ActivateInteractable()
@@ -96,7 +102,7 @@ namespace ProjectUnicorn.Player
         private Collider2D GetInteractable()
         {
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, _radius, _interactableLayer);
-            
+
             if (colliders.Length == 0) return null; // return null if the array is empty
 
             Collider2D closestCollider = null;
@@ -116,10 +122,12 @@ namespace ProjectUnicorn.Player
             return closestCollider;
         }
 
+
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(transform.position, _radius);
         }
-    }
+    }   
 }
+

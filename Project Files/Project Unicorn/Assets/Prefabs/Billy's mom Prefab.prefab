@@ -1982,6 +1982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6280358668506906753}
   - component: {fileID: 5349924634105468265}
+  - component: {fileID: -5681828223730826116}
   m_Layer: 0
   m_Name: Billy's mom Prefab
   m_TagString: Untagged
@@ -2070,6 +2071,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-5681828223730826116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3394809441672368176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e7fb6555f8f114b87b7f66b2f77024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetBy: 30
 --- !u!1 &3488991933607959981
 GameObject:
   m_ObjectHideFlags: 0

@@ -74,7 +74,6 @@ public class Inventory : MonoBehaviour {
             isTransitioning = false;
             gameObject.SetActive(false);
         }
-
     }
 
     public void addItem(Item.ID item, GameObject obj) {
