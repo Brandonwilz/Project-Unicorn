@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LabelInteract : MonoBehaviour {
 
-    [SerializeField] float timeAnimate = 1f;
+    [SerializeField] float timeAnimate = 0.5f;
     [SerializeField] float distanceAnimate = 0.5f;
     [SerializeField] Vector3 offset = Vector3.zero;
 
