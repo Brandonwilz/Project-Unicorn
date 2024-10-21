@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\LabelInteract.cs" />
     <Compile Include="Assets\Scripts\DialougeSystem\ConversationManager.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\InteractableRequireItem.cs" />
     <Compile Include="Assets\Scripts\InteractionSystem\Interactable.cs" />
     <Compile Include="Assets\Scripts\SetSoundStep.cs" />
     <Compile Include="Assets\Scripts\DialougeSystem\Conversation.cs" />
@@ -74,9 +75,9 @@
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteractor.cs" />
-    <Compile Include="Assets\Scripts\SetInteractableLabel.cs" />
-    <Compile Include="Assets\Scripts\InteractableRequireItem.cs" />
     <Compile Include="Assets\Scripts\InteractableItemUse.cs" />
+    <Compile Include="Assets\Scripts\SetInteractableLabel.cs" />
+    <Compile Include="Assets\Scripts\Labels.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

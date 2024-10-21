@@ -12,13 +12,17 @@ namespace ProjectUnicorn.InteractionSystem
     /// </summary>
     public interface Interactable
     {
+        //----------------------------
         /// <summary>
         /// This method is called when the interactable object is interacted with.
         /// </summary>
         public void Interact();
-        // added
+
+        // added by maalmo234
         //----------------------------------------------------------------------
         public void Interact(Item.ID item);
+
+        public void SetLabelActive(bool isActive);
         //----------------------------------------------------------------------
     }
 }

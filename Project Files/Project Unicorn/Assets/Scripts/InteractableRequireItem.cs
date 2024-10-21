@@ -2,6 +2,7 @@ using ProjectUnicorn.InteractionSystem;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
@@ -45,6 +46,19 @@ public class InteractableRequireItem : MonoBehaviour, Interactable {
             catch (NullReferenceException e) {
                 Debug.LogError(e.Message);
             }
+        }
+    }
+
+    public void SetLabelActive(bool isActive) {
+        LabelInteract thisLabel = Labels.getLabel(Labels.ID.locked);
+        try{
+            if (isActive) {
+                thisLabel.setPosition(transform.position);
+            }
+            thisLabel.setActive(isActive);
+        }
+        catch(NullReferenceException e) {
+            Debug.LogError(e);
         }
     }
 }

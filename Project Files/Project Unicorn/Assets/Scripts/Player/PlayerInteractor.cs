@@ -1,5 +1,5 @@
 using ProjectUnicorn.InteractionSystem;
-
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -27,15 +27,11 @@ namespace ProjectUnicorn.Player
         // added
         //----------------------------------------------------------------------
         [SerializeField] private LayerMask _interactableLayer;
-        [SerializeField] private LabelInteract _label;
 
         public GameObject _currentInteractableObject = null;
         private Collider2D _interactableCollider = null;
 
         private void Start() {
-            if(_label != null) {
-                _label.setActive(false);
-            }
         }
         //----------------------------------------------------------------------
 
@@ -46,23 +42,26 @@ namespace ProjectUnicorn.Player
 
             // added
             //----------------------------------------------------------------------
-            if (_label != null) {
-                _interactableCollider = GetInteractable();
-                if (_interactableCollider != null) {
-                    if (_interactableCollider.gameObject != _currentInteractableObject) {
-                        _label.setPosition(_interactableCollider.gameObject.transform.position);
-                        _label.setActive(true);
-                        _currentInteractableObject = _interactableCollider.gameObject;
-                        Inventory.inventoryCurrent.setVisible(false);
-                    }
+            _interactableCollider = GetInteractable();
+            if (_interactableCollider != null) {
+                if (_interactableCollider.gameObject != _currentInteractableObject) {
+                    Labels.setActiveAll(false);
+                    _interactableCollider.gameObject.SendMessage("SetLabelActive", true);
+                    _currentInteractableObject = _interactableCollider.gameObject;
+                    Inventory.inventoryCurrent.setVisible(false);
                 }
-                else {
-                    if(_currentInteractableObject != null) {
-                        Inventory.inventoryCurrent.setVisible(false);
-                    }
-                    _label.setActive(false);
-                    _currentInteractableObject = null;
+            }
+            else {
+                if (_currentInteractableObject != null) {
+                    Inventory.inventoryCurrent.setVisible(false);
                 }
+                try {
+                    Labels.setActiveAll(false);
+                }
+                catch(NullReferenceException e) {
+                    Debug.LogError(e);
+                }
+                _currentInteractableObject = null;
             }
             //----------------------------------------------------------------------
         }

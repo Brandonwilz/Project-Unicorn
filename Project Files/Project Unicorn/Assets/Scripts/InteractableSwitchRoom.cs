@@ -1,4 +1,5 @@
 using ProjectUnicorn.InteractionSystem;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,5 +22,18 @@ public class InteractableSwitchRoom : MonoBehaviour, Interactable {
     }
 
     public void Interact(Item.ID item) {
+    }
+
+    public void SetLabelActive(bool isActive) {
+        LabelInteract thisLabel = Labels.getLabel(Labels.ID.space);
+        try{
+            if (isActive) {
+                thisLabel.setPosition(transform.position);
+            }
+            thisLabel.setActive(isActive);
+        }
+        catch(NullReferenceException e) {
+            Debug.LogError(e);
+        }
     }
 }

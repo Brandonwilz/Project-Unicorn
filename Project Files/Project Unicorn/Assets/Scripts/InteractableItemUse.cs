@@ -27,4 +27,7 @@ public class InteractableItemUse : MonoBehaviour, Interactable {
 
     public void Interact(Item.ID item) {
     }
+
+    public void SetLabelActive(bool isActive) {
+    }
 }
