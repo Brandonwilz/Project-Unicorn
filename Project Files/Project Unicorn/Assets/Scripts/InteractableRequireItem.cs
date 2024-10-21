@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
-public class InteractableRequireItem : MonoBehaviour, Interactable {
+public class InteractableRequireItem : MonoBehaviour, IInteractable {
     [SerializeField] GameObject requiringObject;
     [SerializeField] Item.ID requiredItem;
 
