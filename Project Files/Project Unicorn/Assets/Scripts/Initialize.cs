@@ -20,7 +20,7 @@ public class Initialize : MonoBehaviour {
 
         Inventory.inventoryCurrent = inventory;
         if (inventory != null) {
-            inventory.gameObject.SetActive(false);
+            inventory.gameObject.SetActive(true);
         }
     }
 }

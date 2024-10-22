@@ -17,7 +17,7 @@ public class InteractableItemUse : MonoBehaviour, Interactable {
         try {
             item = GetComponentInChildren<Item>();
             if (item != null) {
-                PlayerInteractor.playerInteractorCurrent._currentInteractableObject.GetComponent<Interactable>().Interact(item.getID());
+                PlayerInteractor.playerInteractorCurrent._currentInteractableObject.GetComponent<InteractableRequireItem>().Interact(item.getID());
             }
         }
         catch(System.NullReferenceException e) {
